@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import {
   SignInScreen,
-  //   SignUpScreen,
+  SignUpScreen,
   //   HomeScreen,
   //   ForgotPasswordScreen,
   //   ItemScreen,
@@ -21,11 +21,11 @@ const Routes = () => {
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="SignIn" component={SignInScreen}></Stack.Screen>
+        <Stack.Screen name="SignUp" component={SignUpScreen}></Stack.Screen>
         {/* <Stack.Screen
           name="ForgotPassword"
           component={ForgotPasswordScreen}
         ></Stack.Screen> */}
-        {/* <Stack.Screen name="SignUp" component={SignUpScreen}></Stack.Screen> */}
         {/* <Stack.Screen name="Home" component={HomeScreen}></Stack.Screen> */}
         {/* <Stack.Screen name="Item" component={ItemScreen}></Stack.Screen> */}
         {/* <Stack.Screen

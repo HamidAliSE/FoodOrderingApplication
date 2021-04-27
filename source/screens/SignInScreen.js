@@ -16,7 +16,7 @@ import {
   SignIn,
 } from "../resources/constants/strings";
 
-const SignInScreen = () => {
+const SignInScreen = ({ navigation }) => {
   const NoAccountTextProps = { text: NoAccountPrompt };
   const AppLogoProps = {
     source: require("../resources/images/AppLogo.jpg"),
@@ -49,7 +49,7 @@ const SignInScreen = () => {
     text: SignUp,
     color: "#000000",
     onPress: () => {
-      console.log("Sign Up Button Pressed.");
+      navigation.navigate("SignUp");
     },
   };
 

@@ -1,7 +1,13 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, KeyboardAvoidingView } from "react-native";
 
-import { Text, Image, TextInput, Button } from "../components";
+import {
+  Text,
+  Image,
+  TextInput,
+  Button,
+  PasswordTextInput,
+} from "../components";
 import {
   NoAccountPrompt,
   Email,
@@ -9,8 +15,6 @@ import {
   SignUp,
   SignIn,
 } from "../resources/constants/strings";
-
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 const SignInScreen = () => {
   const NoAccountTextProps = { text: NoAccountPrompt };
@@ -27,6 +31,10 @@ const SignInScreen = () => {
     style: styles.marginFromTop,
     label: Password,
     mode: "outlined",
+    right: {
+      size: 24,
+      color: "black",
+    },
   };
   const SignInButtonProps = {
     text: SignIn,
@@ -46,18 +54,18 @@ const SignInScreen = () => {
   };
 
   return (
-    <KeyboardAwareScrollView contentContainerStyle={styles.screen}>
+    <KeyboardAvoidingView style={styles.screen}>
       <Image properties={AppLogoProps} />
       <View style={styles.signInContainer}>
         <TextInput properties={EmailTextInputProps} />
-        <TextInput properties={PasswordTextInputProps} />
+        <PasswordTextInput properties={PasswordTextInputProps} />
         <Button properties={SignInButtonProps}></Button>
         <View style={styles.signUpContainer}>
           <Text properties={NoAccountTextProps} />
           <Button properties={SignUpButtonProps}></Button>
         </View>
       </View>
-    </KeyboardAwareScrollView>
+    </KeyboardAvoidingView>
   );
 };
 

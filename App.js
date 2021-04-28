@@ -1,15 +1,23 @@
 import React from "react";
+
 import Routes from "./source/components/Routes";
+import { Primary, Accent } from "./source/resources/constants/colors";
 
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { DefaultTheme, Provider as PaperProvider } from "react-native-paper";
+import { DefaultTheme as NavigationDefaultTheme } from "@react-navigation/native";
+import {
+  DefaultTheme as PaperDefaultTheme,
+  Provider as PaperProvider,
+} from "react-native-paper";
 
 const theme = {
-  ...DefaultTheme,
+  ...PaperDefaultTheme,
+  ...NavigationDefaultTheme,
   colors: {
-    ...DefaultTheme.colors,
-    primary: "#F7941D",
-    accent: "#FFF200",
+    ...PaperDefaultTheme.colors,
+    ...NavigationDefaultTheme.colors,
+    primary: Primary,
+    accent: Accent,
   },
 };
 
@@ -19,7 +27,7 @@ const App = () => {
       theme={theme}
       settings={{ icon: (props) => <Icon {...props} /> }}
     >
-      <Routes />
+      <Routes theme={theme} />
     </PaperProvider>
   );
 };

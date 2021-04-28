@@ -1,2 +1,2 @@
 export const Primary = "#F7941D";
-export const Secondary = "#FFF200";
+export const Accent = "#FFF200";

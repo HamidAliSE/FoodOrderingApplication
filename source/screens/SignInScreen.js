@@ -42,7 +42,7 @@ const SignInScreen = ({ navigation }) => {
     style: styles.marginFromTop,
     labelStyle: styles.signInButtonLabelStyle,
     onPress: () => {
-      console.log("Sign In Button Pressed.");
+      navigation.navigate("Tabs");
     },
   };
   const SignUpButtonProps = {

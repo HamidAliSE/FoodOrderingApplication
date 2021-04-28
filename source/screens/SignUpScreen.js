@@ -67,7 +67,7 @@ const SignUpScreen = ({ navigation }) => {
     style: styles.marginFromTop,
     labelStyle: styles.signUpButtonLabelStyle,
     onPress: () => {
-      console.log("Sign Up Button Pressed.");
+      navigation.navigate("Tabs");
     },
   };
   const UserTypeSegmentProps = {

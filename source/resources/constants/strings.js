@@ -76,28 +76,33 @@ export const PlacesWithSpace = " Places";
 
 const FastFoods = {
   Name: "Fast Foods",
-  IconURL: "",
+  IconName: "silverware-fork-knife",
   AvailablePlaces: 657,
+  BackgroundColor: "peachpuff",
 };
 const SoftDrinks = {
   Name: "Soft Drinks",
-  IconURL: "",
+  IconName: "bottle-wine",
   AvailablePlaces: 298,
+  BackgroundColor: "palegreen",
 };
 const Fruits = {
   Name: "Fruits",
-  IconURL: "",
+  IconName: "food-apple",
   AvailablePlaces: 326,
+  BackgroundColor: "lightpink",
 };
 const Vegetables = {
   Name: "Vegetables",
-  IconURL: "",
+  IconName: "carrot",
   AvailablePlaces: 688,
+  BackgroundColor: "lightsteelblue",
 };
 const BakeryItems = {
   Name: "Bakery Items",
-  IconURL: "",
+  IconName: "cupcake",
   AvailablePlaces: 15,
+  BackgroundColor: "powderblue",
 };
 
 export const CategoriesData = [

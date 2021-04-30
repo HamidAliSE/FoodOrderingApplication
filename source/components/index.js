@@ -1,5 +1,6 @@
 export { default as Button } from "./Button";
 export { default as ButtonGroup } from "./ButtonGroup";
+export { default as CategoryCard } from "./CategoryCard";
 export { default as Image } from "./Image";
 export { default as PasswordTextInput } from "./PasswordTextInput";
 export { default as PopularItemCard } from "./PopularItemCard";

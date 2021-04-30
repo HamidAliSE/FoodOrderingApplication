@@ -7,7 +7,7 @@ import {
   StyleSheet,
 } from "react-native";
 
-import { PopularItemCard, SectionHeader } from "../components";
+import { PopularItemCard, SectionHeader, CategoryCard } from "../components";
 import {
   WelcomeMessage,
   UserName,
@@ -18,6 +18,7 @@ import {
   ViewMore,
   ShowAll,
   PopularData,
+  CategoriesData,
 } from "../resources/constants/strings";
 
 import { Text, Searchbar } from "react-native-paper";
@@ -26,7 +27,7 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.screen}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
-      <ScrollView style={styles.screenContainer}>
+      <ScrollView contentContainerStyle={styles.screenContainer}>
         <Text style={styles.greetings}>{WelcomeMessage}</Text>
         <Text style={styles.name}>{UserName}</Text>
         <Searchbar
@@ -34,26 +35,39 @@ const HomeScreen = () => {
           placeholder={SearchBarPlaceHolder}
         ></Searchbar>
         <SectionHeader heading={Popular} action={ViewMore} />
-        <View>
-          <ScrollView
-            horizontal={true}
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.popularContentContainer}
-          >
-            {PopularData.map((item, index) => (
-              <PopularItemCard
-                key={index}
-                imageSource={item.ImageSource}
-                name={item.Name}
-                description={item.Description}
-                rating={item.Rating}
-                distance={item.Distance}
-                time={item.Time}
-              />
-            ))}
-          </ScrollView>
-        </View>
+        <ScrollView
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.horizontalScrollContentContainer}
+        >
+          {PopularData.map((item, index) => (
+            <PopularItemCard
+              key={index}
+              imageSource={item.ImageSource}
+              name={item.Name}
+              description={item.Description}
+              rating={item.Rating}
+              distance={item.Distance}
+              time={item.Time}
+            />
+          ))}
+        </ScrollView>
         <SectionHeader heading={Categories} action={ShowAll} />
+        <ScrollView
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.horizontalScrollContentContainer}
+        >
+          {CategoriesData.map((item, index) => (
+            <CategoryCard
+              key={index}
+              name={item.Name}
+              iconName={item.IconName}
+              availablePlaces={item.AvailablePlaces}
+              backgroundColor={item.BackgroundColor}
+            />
+          ))}
+        </ScrollView>
         {/* <SectionHeader heading={Recommended} action={ViewMore} /> */}
       </ScrollView>
     </SafeAreaView>
@@ -65,8 +79,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   screenContainer: {
-    flex: 1,
-    marginTop: 16,
+    paddingVertical: 16,
   },
   greetings: {
     fontSize: 16,
@@ -80,7 +93,7 @@ const styles = StyleSheet.create({
   searchBar: {
     marginHorizontal: 16,
   },
-  popularContentContainer: {
+  horizontalScrollContentContainer: {
     paddingLeft: 16,
   },
 });

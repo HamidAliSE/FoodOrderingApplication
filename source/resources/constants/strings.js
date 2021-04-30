@@ -24,33 +24,43 @@ export const ViewMore = "View More";
 export const ShowAll = "Show All";
 
 const Popular01 = {
-  ImageURL: "",
-  Name: "",
-  Description: "",
+  ImageSource: require("../images/burger.jpg"),
+  Time: 25,
+  Distance: 254,
+  Name: "Burger",
+  Description: "Ahmad Burger, Fast Food",
   Rating: 4.5,
 };
 const Popular02 = {
-  ImageURL: "",
-  Name: "",
-  Description: "",
+  ImageSource: require("../images/coffee.jpg"),
+  Time: 16,
+  Distance: 168,
+  Name: "Coffee",
+  Description: "Ahmad Burger, Fast Food",
   Rating: 4.7,
 };
 const Popular03 = {
-  ImageURL: "",
-  Name: "",
-  Description: "",
+  ImageSource: require("../images/fries.jpg"),
+  Time: 9,
+  Distance: 99,
+  Name: "Fries",
+  Description: "Ahmad Burger, Fast Food",
   Rating: 4.3,
 };
 const Popular04 = {
-  ImageURL: "",
-  Name: "",
-  Description: "",
+  ImageSource: require("../images/pizza.jpg"),
+  Time: 12,
+  Distance: 132,
+  Name: "Pizza",
+  Description: "Ahmad Burger, Fast Food",
   Rating: 5,
 };
 const Popular05 = {
-  ImageURL: "",
-  Name: "",
-  Description: "",
+  ImageSource: require("../images/shawarma.jpg"),
+  Time: 18,
+  Distance: 180,
+  Name: "Shawarma",
+  Description: "Ahmad Burger, Fast Food",
   Rating: 4.9,
 };
 

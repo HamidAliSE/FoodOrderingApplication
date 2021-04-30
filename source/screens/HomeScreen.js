@@ -40,46 +40,17 @@ const HomeScreen = () => {
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={styles.popularContentContainer}
           >
-            <PopularItemCard
-              imageSource={require("../resources/images/burger.jpg")}
-              name="Burger"
-              description="Ahmad Burger, Fast Food"
-              rating={4.7}
-              distance={254}
-              time={27}
-            />
-            <PopularItemCard
-              imageSource={require("../resources/images/burger.jpg")}
-              name="Burger"
-              description="Ahmad Burger, Fast Food"
-              rating={4.7}
-              distance={254}
-              time={27}
-            />
-            <PopularItemCard
-              imageSource={require("../resources/images/burger.jpg")}
-              name="Burger"
-              description="Ahmad Burger, Fast Food"
-              rating={4.7}
-              distance={254}
-              time={27}
-            />
-            <PopularItemCard
-              imageSource={require("../resources/images/burger.jpg")}
-              name="Burger"
-              description="Ahmad Burger, Fast Food"
-              rating={4.7}
-              distance={254}
-              time={27}
-            />
-            <PopularItemCard
-              imageSource={require("../resources/images/burger.jpg")}
-              name="Burger"
-              description="Ahmad Burger, Fast Food"
-              rating={4.7}
-              distance={254}
-              time={27}
-            />
+            {PopularData.map((item, index) => (
+              <PopularItemCard
+                key={index}
+                imageSource={item.ImageSource}
+                name={item.Name}
+                description={item.Description}
+                rating={item.Rating}
+                distance={item.Distance}
+                time={item.Time}
+              />
+            ))}
           </ScrollView>
         </View>
         {/* <SectionHeader heading={Categories} action={ShowAll} /> */}

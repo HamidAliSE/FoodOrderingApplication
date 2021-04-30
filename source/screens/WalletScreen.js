@@ -16,13 +16,13 @@ const WalletScreen = () => {
         <Text style={styles.amount}>$ 02.00</Text>
       </View>
       <View style={styles.container}>
-        <Text style={styles.text}>Total Payment</Text>
+        <Text style={styles.text}>Remaining Payment</Text>
         <Text style={styles.amount}>$ 03.00</Text>
       </View>
-      <View style={styles.container}>
+      {/* <View style={styles.container}>
         <Text style={styles.text}>Payment Filter By Type</Text>
         <Text style={styles.amount}>$ 10.00</Text>
-      </View>
+      </View> */}
     </View>
   );
 };

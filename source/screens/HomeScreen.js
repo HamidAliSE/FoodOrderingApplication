@@ -53,7 +53,7 @@ const HomeScreen = () => {
             ))}
           </ScrollView>
         </View>
-        {/* <SectionHeader heading={Categories} action={ShowAll} /> */}
+        <SectionHeader heading={Categories} action={ShowAll} />
         {/* <SectionHeader heading={Recommended} action={ViewMore} /> */}
       </ScrollView>
     </SafeAreaView>

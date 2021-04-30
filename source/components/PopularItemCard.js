@@ -15,12 +15,14 @@ const PopularItemCard = (props) => {
         <View style={styles.chipsContainer}>
           <Chip
             icon={() => <Icon name="place" color="red" />}
+            style={styles.chip}
             textStyle={styles.chipText}
           >
             {props.distance}m
           </Chip>
           <Chip
             icon={() => <Icon name="schedule" color="red" />}
+            style={styles.chip}
             textStyle={styles.chipText}
           >
             {props.time}'
@@ -47,6 +49,9 @@ const styles = StyleSheet.create({
   },
   chipsContainer: {
     flexDirection: "row",
+  },
+  chip: {
+    marginLeft: 8,
   },
   chipText: {
     color: "red",

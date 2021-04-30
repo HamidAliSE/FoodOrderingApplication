@@ -6,6 +6,7 @@ import {
   HomeScreen,
   CartScreen,
   CategoriesScreen,
+  WalletScreen,
   //   ForgotPasswordScreen,
   //   ItemScreen,
 } from "../screens";
@@ -71,6 +72,16 @@ const TabRoutes = () => {
           tabBarLabel: "Cart",
           tabBarIcon: ({ color }) => (
             <Icon name="shopping-cart" color={color} size={24} />
+          ),
+        }}
+      ></Tab.Screen>
+      <Tab.Screen
+        name="Wallet"
+        component={WalletScreen}
+        options={{
+          tabBarLabel: "Wallet",
+          tabBarIcon: ({ color }) => (
+            <Icon name="account-balance-wallet" color={color} size={24} />
           ),
         }}
       ></Tab.Screen>

@@ -43,7 +43,7 @@ const TabRoutes = () => {
       backBehavior="initialRoute"
       shifting={true}
       activeColor="white"
-      inactiveColor="lightgrey"
+      inactiveColor="white"
     >
       <Tab.Screen
         name="Home"

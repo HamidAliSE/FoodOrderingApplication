@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
   card: {
     height: 150,
     marginRight: 16,
+    marginBottom: 16,
   },
   cardContainer: {
     flex: 1,
@@ -36,8 +37,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   text: {
-	  color: "white",
-  }
+    color: "white",
+  },
 });
 
 export default PopularItemCard;

@@ -120,3 +120,56 @@ export const RecommendedData = [
   Popular02,
   Popular01,
 ];
+
+const Transactions01 = {
+  IconName: FastFoods.IconName,
+  Category: FastFoods.Name,
+  IconColor: FastFoods.BackgroundColor,
+  date: "May 02",
+  Amount: "$ 10.00",
+  Name: "Pizza",
+};
+
+const Transactions02 = {
+  IconName: SoftDrinks.IconName,
+  Category: SoftDrinks.Name,
+  IconColor: SoftDrinks.BackgroundColor,
+  date: "May 01",
+  Amount: "$ 03.00",
+  Name: "Coke",
+};
+
+const Transactions03 = {
+  IconName: Fruits.IconName,
+  Category: Fruits.Name,
+  IconColor: Fruits.BackgroundColor,
+  date: "Apr 30",
+  Amount: "$ 05.00",
+  Name: "Apples",
+};
+
+const Transactions04 = {
+  IconName: Vegetables.IconName,
+  Category: Vegetables.Name,
+  IconColor: Vegetables.BackgroundColor,
+  date: "Apr 29",
+  Amount: "$ 5.00",
+  Name: "Potatoes",
+};
+
+const Transactions05 = {
+  IconName: BakeryItems.IconName,
+  Category: BakeryItems.Name,
+  IconColor: BakeryItems.BackgroundColor,
+  date: "Apr 28",
+  Amount: "$ 01.00",
+  Name: "Biscuits",
+};
+
+export const TransactionsData = [
+  Transactions01,
+  Transactions02,
+  Transactions03,
+  Transactions04,
+  Transactions05,
+];

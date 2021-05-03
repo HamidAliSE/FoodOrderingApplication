@@ -9,3 +9,4 @@ export { default as RecommendedCard } from "./RecommendedCard";
 export { default as SectionHeader } from "./SectionHeader";
 export { default as Text } from "./Text";
 export { default as TextInput } from "./TextInput";
+export { default as TransactionListItem } from "./TransactionListItem";

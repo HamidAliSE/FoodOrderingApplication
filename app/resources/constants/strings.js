@@ -78,31 +78,31 @@ const FastFoods = {
   Name: "Fast Foods",
   IconName: "silverware-fork-knife",
   AvailablePlaces: 657,
-  BackgroundColor: "peachpuff",
+  BackgroundColor: "darkgreen",
 };
 const SoftDrinks = {
   Name: "Soft Drinks",
   IconName: "bottle-wine",
   AvailablePlaces: 298,
-  BackgroundColor: "palegreen",
+  BackgroundColor: "red",
 };
 const Fruits = {
   Name: "Fruits",
   IconName: "food-apple",
   AvailablePlaces: 326,
-  BackgroundColor: "lightpink",
+  BackgroundColor: "darkgoldenrod",
 };
 const Vegetables = {
   Name: "Vegetables",
   IconName: "carrot",
   AvailablePlaces: 688,
-  BackgroundColor: "lightsteelblue",
+  BackgroundColor: "crimson",
 };
 const BakeryItems = {
   Name: "Bakery Items",
   IconName: "cupcake",
   AvailablePlaces: 15,
-  BackgroundColor: "powderblue",
+  BackgroundColor: "blueviolet",
 };
 
 export const CategoriesData = [

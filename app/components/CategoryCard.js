@@ -14,9 +14,9 @@ const PopularItemCard = (props) => {
       style={[styles.card, { width, backgroundColor: props.backgroundColor }]}
     >
       <View style={styles.cardContainer}>
-        <MaterialCommunityIcons name={props.iconName} size={48} />
-        <Text>{props.name}</Text>
-        <Text>
+        <MaterialCommunityIcons name={props.iconName} size={48} color="white" />
+        <Text style={styles.text}>{props.name}</Text>
+        <Text style={styles.text}>
           {props.availablePlaces}
           {PlacesWithSpace}
         </Text>
@@ -35,6 +35,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  text: {
+	  color: "white",
+  }
 });
 
 export default PopularItemCard;

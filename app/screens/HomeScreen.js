@@ -7,7 +7,12 @@ import {
   StyleSheet,
 } from "react-native";
 
-import { PopularItemCard, SectionHeader, CategoryCard } from "../components";
+import {
+  PopularItemCard,
+  SectionHeader,
+  CategoryCard,
+  RecommendedCard,
+} from "../components";
 import {
   WelcomeMessage,
   UserName,
@@ -19,6 +24,7 @@ import {
   ShowAll,
   PopularData,
   CategoriesData,
+  RecommendedData,
 } from "../resources/constants/strings";
 
 import { Text, Searchbar } from "react-native-paper";
@@ -68,7 +74,22 @@ const HomeScreen = () => {
             />
           ))}
         </ScrollView>
-        {/* <SectionHeader heading={Recommended} action={ViewMore} /> */}
+        <SectionHeader heading={Recommended} action={ViewMore} />
+        <ScrollView
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.horizontalScrollContentContainer}
+        >
+          {RecommendedData.map((item, index) => (
+            <RecommendedCard
+              key={index}
+              imageSource={item.ImageSource}
+              name={item.Name}
+              description={item.Description}
+              rating={item.Rating}
+            />
+          ))}
+        </ScrollView>
       </ScrollView>
     </SafeAreaView>
   );

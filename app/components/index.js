@@ -4,6 +4,7 @@ export { default as CategoryCard } from "./CategoryCard";
 export { default as Image } from "./Image";
 export { default as PasswordTextInput } from "./PasswordTextInput";
 export { default as PopularItemCard } from "./PopularItemCard";
+export { default as RecommendedCard } from "./RecommendedCard";
 export { default as SectionHeader } from "./SectionHeader";
 export { default as Text } from "./Text";
 export { default as TextInput } from "./TextInput";

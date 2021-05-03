@@ -113,41 +113,10 @@ export const CategoriesData = [
   BakeryItems,
 ];
 
-const Recommended01 = {
-  ImageURL: "",
-  Name: "",
-  Description: "",
-  Rating: 5,
-};
-const Recommended02 = {
-  ImageURL: "",
-  Name: "",
-  Description: "",
-  Rating: 5,
-};
-const Recommended03 = {
-  ImageURL: "",
-  Name: "",
-  Description: "",
-  Rating: 5,
-};
-const Recommended04 = {
-  ImageURL: "",
-  Name: "",
-  Description: "",
-  Rating: 5,
-};
-const Recommended05 = {
-  ImageURL: "",
-  Name: "",
-  Description: "",
-  Rating: 5,
-};
-
 export const RecommendedData = [
-  Recommended01,
-  Recommended02,
-  Recommended03,
-  Recommended04,
-  Recommended05,
+  Popular05,
+  Popular04,
+  Popular03,
+  Popular02,
+  Popular01,
 ];

@@ -1,16 +1,10 @@
 import React from "react";
-import {
-  View,
-  ScrollView,
-  StatusBar,
-  SafeAreaView,
-  StyleSheet,
-} from "react-native";
+import { ScrollView, StatusBar, SafeAreaView, StyleSheet } from "react-native";
 
 import {
   PopularItemCard,
   SectionHeader,
-  CategoryCard,
+  Category,
   RecommendedCard,
 } from "../components";
 import {
@@ -65,7 +59,7 @@ const HomeScreen = () => {
           contentContainerStyle={styles.horizontalScrollContentContainer}
         >
           {CategoriesData.map((item, index) => (
-            <CategoryCard
+            <Category
               key={index}
               name={item.Name}
               iconName={item.IconName}

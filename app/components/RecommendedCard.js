@@ -4,7 +4,7 @@ import { StyleSheet, useWindowDimensions } from "react-native";
 import { Rating } from "react-native-elements";
 import { Card } from "react-native-paper";
 
-const PopularItemCard = (props) => {
+const RecommendedCard = (props) => {
   const width = (useWindowDimensions().width - 48) / 2;
 
   return (
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PopularItemCard;
+export default RecommendedCard;

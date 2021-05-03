@@ -6,7 +6,7 @@ import { PlacesWithSpace } from "../resources/constants/strings";
 import { Card, Text } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-const PopularItemCard = (props) => {
+const CategoryCard = (props) => {
   const width = (useWindowDimensions().width - 64) / 3;
 
   return (
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PopularItemCard;
+export default CategoryCard;

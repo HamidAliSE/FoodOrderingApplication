@@ -10,7 +10,7 @@ import {
 import { TransactionsData } from "../resources/constants/strings";
 import { TransactionListItem } from "../components";
 
-const TransactionsScreen = () => {
+const OrdersScreen = () => {
   return (
     <SafeAreaView style={styles.screen}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TransactionsScreen;
+export default OrdersScreen;

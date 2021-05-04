@@ -3,4 +3,4 @@ export { default as SignUpScreen } from "./SignUpScreen";
 export { default as HomeScreen } from "./HomeScreen";
 export { default as AccountScreen } from "./AccountScreen";
 export { default as CategoriesScreen } from "./CategoriesScreen";
-export { default as TransactionsScreen } from "./TransactionsScreen";
+export { default as OrdersScreen } from "./OrdersScreen";

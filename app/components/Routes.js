@@ -4,7 +4,7 @@ import {
   SignInScreen,
   SignUpScreen,
   HomeScreen,
-  CartScreen,
+  AccountScreen,
   CategoriesScreen,
   TransactionsScreen,
   //   ForgotPasswordScreen,
@@ -66,12 +66,12 @@ const TabRoutes = () => {
         }}
       ></Tab.Screen>
       <Tab.Screen
-        name="Cart"
-        component={CartScreen}
+        name="Account"
+        component={AccountScreen}
         options={{
-          tabBarLabel: "Cart",
+          tabBarLabel: "Account",
           tabBarIcon: ({ color }) => (
-            <Icon name="shopping-cart" color={color} size={24} />
+            <Icon name="account-circle" color={color} size={24} />
           ),
         }}
       ></Tab.Screen>

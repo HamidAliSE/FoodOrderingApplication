@@ -29,6 +29,7 @@ const Routes = (props) => {
         <Stack.Screen name="SignIn" component={SignInScreen}></Stack.Screen>
         <Stack.Screen name="SignUp" component={SignUpScreen}></Stack.Screen>
         <Stack.Screen name="Tabs" component={TabRoutes}></Stack.Screen>
+        <Stack.Screen name="Orders" component={OrdersScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -72,16 +73,6 @@ const TabRoutes = () => {
           tabBarLabel: "Account",
           tabBarIcon: ({ color }) => (
             <Icon name="account-circle" color={color} size={24} />
-          ),
-        }}
-      ></Tab.Screen>
-      <Tab.Screen
-        name="Orders"
-        component={OrdersScreen}
-        options={{
-          tabBarLabel: "Orders",
-          tabBarIcon: ({ color }) => (
-            <Icon name="content-copy" color={color} size={24} />
           ),
         }}
       ></Tab.Screen>

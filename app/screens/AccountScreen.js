@@ -1,17 +1,18 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, StatusBar, SafeAreaView } from "react-native";
 
 import { Text, TouchableRipple } from "react-native-paper";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { Primary } from "../resources/constants/colors";
 
-const AccountScreen = () => {
+const AccountScreen = ({ navigation }) => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.screen}>
+      <StatusBar backgroundColor="white" barStyle="dark-content" />
       <Text style={styles.greetings}>Hello, Hamid Ali</Text>
       <TouchableRipple
         rippleColor={Primary}
-        onPress={() => console.log("Action Container Pressed.")}
+        onPress={() => navigation.navigate("Orders")}
       >
         <View style={styles.actionContainer}>
           <View style={styles.iconContainer}>
@@ -23,12 +24,12 @@ const AccountScreen = () => {
           </View>
         </View>
       </TouchableRipple>
-    </View>
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  screen: {
     flex: 1,
     paddingVertical: 16,
   },

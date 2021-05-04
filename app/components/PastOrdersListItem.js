@@ -4,7 +4,7 @@ import { View, StyleSheet } from "react-native";
 import { Text, Divider } from "react-native-paper";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
-const TransactionListItem = (props) => {
+const PastOrdersListItem = (props) => {
   return (
     <View>
       <View style={styles.container}>
@@ -21,7 +21,6 @@ const TransactionListItem = (props) => {
         </View>
       </View>
       <Divider />
-      {/* <View style={{ backgroundColor: "grey", height: 1 }} /> */}
     </View>
   );
 };
@@ -48,4 +47,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TransactionListItem;
+export default PastOrdersListItem;

@@ -7,16 +7,16 @@ import {
   ScrollView,
 } from "react-native";
 
-import { TransactionsData } from "../resources/constants/strings";
-import { TransactionListItem } from "../components";
+import { PastOrdersData } from "../resources/constants/strings";
+import { PastOrdersListItem } from "../components";
 
 const OrdersScreen = () => {
   return (
     <SafeAreaView style={styles.screen}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
       <ScrollView contentContainerStyle={styles.screenContainer}>
-        {TransactionsData.map((item, index) => (
-          <TransactionListItem
+        {PastOrdersData.map((item, index) => (
+          <PastOrdersListItem
             key={index}
             iconName={item.IconName}
             category={item.Category}

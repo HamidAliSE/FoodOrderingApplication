@@ -10,7 +10,7 @@ import {
 import { PastOrdersData } from "../resources/constants/strings";
 import { PastOrdersListItem } from "../components";
 
-const OrdersScreen = () => {
+const PastOrdersScreen = () => {
   return (
     <SafeAreaView style={styles.screen}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default OrdersScreen;
+export default PastOrdersScreen;

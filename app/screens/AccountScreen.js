@@ -12,7 +12,7 @@ const AccountScreen = ({ navigation }) => {
       <Text style={styles.greetings}>Hello, Hamid Ali</Text>
       <TouchableRipple
         rippleColor={Primary}
-        onPress={() => navigation.navigate("Orders")}
+        onPress={() => navigation.navigate("OrdersTabs")}
       >
         <View style={styles.actionContainer}>
           <View style={styles.iconContainer}>

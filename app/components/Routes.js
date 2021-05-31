@@ -1,4 +1,5 @@
 import React from "react";
+import { Text } from "react-native";
 
 import {
   SignInScreen,
@@ -8,6 +9,16 @@ import {
   CategoriesScreen,
   ActiveOrdersScreen,
   PastOrdersScreen,
+  NotificationsScreen,
+  MyDetailsScreen,
+  PaymentMethodsScreen,
+  ReviewsScreen,
+  FavoritesScreen,
+  ReferFriendScreen,
+  FAQScreen,
+  RateAppScreen,
+  ContactUsScreen,
+  ScheduledOrdersScreen,
 } from "../screens";
 import { Primary } from "../resources/constants/colors";
 
@@ -33,6 +44,33 @@ const Routes = (props) => {
           name="OrdersTabs"
           component={OrdersTabsRoutes}
           options={{ headerShown: true, title: "Orders" }}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="Notifications"
+          component={NotificationsScreen}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="MyDetails"
+          component={MyDetailsScreen}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="PaymentMethods"
+          component={PaymentMethodsScreen}
+        ></Stack.Screen>
+        <Stack.Screen name="Reviews" component={ReviewsScreen}></Stack.Screen>
+        <Stack.Screen
+          name="Favorites"
+          component={FavoritesScreen}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="ReferFriend"
+          component={ReferFriendScreen}
+        ></Stack.Screen>
+        <Stack.Screen name="FAQ" component={FAQScreen}></Stack.Screen>
+        <Stack.Screen name="RateApp" component={RateAppScreen}></Stack.Screen>
+        <Stack.Screen
+          name="ContactUs"
+          component={ContactUsScreen}
         ></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
@@ -95,26 +133,28 @@ const OrdersTabsRoutes = () => {
         showIcon: true,
         activeTintColor: Primary,
         inactiveTintColor: "black",
+        tabStyle: { height: 60 },
       }}
     >
       <OrdersTabs.Screen
         name="ActiveOrders"
         component={ActiveOrdersScreen}
         options={{
-          tabBarLabel: "Active Orders",
-          tabBarIcon: ({ color }) => (
-            <Icon name="content-copy" color={color} size={24} />
-          ),
+          tabBarLabel: "Active",
         }}
       ></OrdersTabs.Screen>
       <OrdersTabs.Screen
         name="PastOrders"
         component={PastOrdersScreen}
         options={{
-          tabBarLabel: "Past Orders",
-          tabBarIcon: ({ color }) => (
-            <Icon name="content-copy" color={color} size={24} />
-          ),
+          tabBarLabel: "Past",
+        }}
+      ></OrdersTabs.Screen>
+      <OrdersTabs.Screen
+        name="ScheduledOrders"
+        component={ScheduledOrdersScreen}
+        options={{
+          tabBarLabel: "Scheduled",
         }}
       ></OrdersTabs.Screen>
     </OrdersTabs.Navigator>

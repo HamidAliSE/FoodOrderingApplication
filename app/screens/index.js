@@ -15,3 +15,4 @@ export { default as ContactUsScreen } from "./ContactUsScreen";
 export { default as FavoritesScreen } from "./FavoritesScreen";
 export { default as ReviewsScreen } from "./ReviewsScreen";
 export { default as ScheduledOrdersScreen } from "./ScheduledOrdersScreen";
+export { default as InvoiceScreen } from "./InvoiceScreen";

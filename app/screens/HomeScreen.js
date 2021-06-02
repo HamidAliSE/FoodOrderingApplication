@@ -1,5 +1,11 @@
 import React from "react";
-import { ScrollView, StatusBar, SafeAreaView, StyleSheet } from "react-native";
+import {
+  View,
+  ScrollView,
+  StatusBar,
+  SafeAreaView,
+  StyleSheet,
+} from "react-native";
 
 import {
   PopularItemCard,
@@ -21,15 +27,20 @@ import {
   RecommendedData,
 } from "../resources/constants/strings";
 
-import { Text, Searchbar } from "react-native-paper";
+import { Text, Searchbar, Button } from "react-native-paper";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.screen}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
       <ScrollView contentContainerStyle={styles.screenContainer}>
         <Text style={styles.greetings}>{WelcomeMessage}</Text>
-        <Text style={styles.name}>{UserName}</Text>
+        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+          <Text style={styles.name}>{UserName}</Text>
+          <Button mode="text" onPress={() => navigation.navigate("Invoice")}>
+            Show Invoice Screen
+          </Button>
+        </View>
         <Searchbar
           style={styles.searchBar}
           placeholder={SearchBarPlaceHolder}

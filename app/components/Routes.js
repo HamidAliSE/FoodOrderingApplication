@@ -20,6 +20,7 @@ import {
   ContactUsScreen,
   ScheduledOrdersScreen,
   InvoiceScreen,
+  ContactScreen,
 } from "../screens";
 import { Primary } from "../resources/constants/colors";
 
@@ -74,6 +75,7 @@ const Routes = (props) => {
           component={ContactUsScreen}
         ></Stack.Screen>
         <Stack.Screen name="Invoice" component={InvoiceScreen}></Stack.Screen>
+        <Stack.Screen name="Contact" component={ContactScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

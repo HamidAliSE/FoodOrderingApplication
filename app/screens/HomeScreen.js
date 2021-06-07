@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  View,
-  ScrollView,
-  StatusBar,
-  SafeAreaView,
-  StyleSheet,
-} from "react-native";
+import { ScrollView, StatusBar, SafeAreaView, StyleSheet } from "react-native";
 
 import {
   PopularItemCard,
@@ -26,6 +20,7 @@ import {
   CategoriesData,
   RecommendedData,
 } from "../resources/constants/strings";
+import { Primary } from "../resources/constants/colors";
 
 import { Text, Searchbar, Button } from "react-native-paper";
 
@@ -35,12 +30,31 @@ const HomeScreen = ({ navigation }) => {
       <StatusBar backgroundColor="white" barStyle="dark-content" />
       <ScrollView contentContainerStyle={styles.screenContainer}>
         <Text style={styles.greetings}>{WelcomeMessage}</Text>
-        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-          <Text style={styles.name}>{UserName}</Text>
-          <Button mode="text" onPress={() => navigation.navigate("Invoice")}>
-            Show Invoice Screen
-          </Button>
-        </View>
+        <Text style={styles.name}>{UserName}</Text>
+        <Button
+          mode="outlined"
+          style={{
+            borderColor: Primary,
+            width: "90%",
+            alignSelf: "center",
+            marginBottom: 8,
+          }}
+          onPress={() => navigation.navigate("Invoice")}
+        >
+          Show Invoice Screen
+        </Button>
+        <Button
+          mode="outlined"
+          style={{
+            borderColor: Primary,
+            width: "90%",
+            alignSelf: "center",
+            marginBottom: 8,
+          }}
+          onPress={() => navigation.navigate("Contact")}
+        >
+          Show Contact Screen
+        </Button>
         <Searchbar
           style={styles.searchBar}
           placeholder={SearchBarPlaceHolder}
